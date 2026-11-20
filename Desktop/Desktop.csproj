@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>Paw.ico</ApplicationIcon>
+    <AssemblyName>爪爪落子</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pieces/*.png" LogicalName="Pieces.%(Filename)%(Extension)" />
+    <EmbeddedResource Include="Paw.ico" LogicalName="Paw.ico" />
+  </ItemGroup>
+</Project>
